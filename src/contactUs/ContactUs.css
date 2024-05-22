@@ -1,0 +1,101 @@
+.FormForContactUS{
+    border: 1px solid #cc9540;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.ColumnContactUs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.email-icon {
+    margin-right: 8px; /* Adjust the spacing between the icon and the text */
+    color: #ffffff; /* Adjust the icon color as needed */
+  }
+.WhiteText{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family:  "Lora", serif;
+    color: white;
+  }
+.ContactUsRow{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.Textfield{
+    padding-left: 16px;
+    padding-right: 16px;
+
+ width: 400px;
+ height: 50px;
+ border: 1px solid #ccc;
+ border-radius: 0px;
+ font-size: 18px;
+ background-color: #FFFDD0;
+
+}
+.Textfield:focus{
+ background-color: #FFFDD0;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 400px;
+ height: 50px;
+ font-size: 18px;
+
+    outline: none;
+    border: 1px solid #ccc;
+   }
+.Textfield::placeholder{
+    color: rgb(26, 24, 24);
+    font-size: 16px;
+}
+
+.submit-button {
+    /* padding: 10px 20px; */
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 0px;
+    background-color: #f59c03; /* Adjust the color to your preference */
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color:#fcb339 ; /* Adjust the hover color */
+  }
+
+  .submit-button:focus {
+    outline: none;
+  }
+  .footer {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #f1f1f1; */
+    padding: 20px;
+    color: white;
+
+    text-align: center;
+  }
+  .MainImpColumn{
+    background-color: #830c29;
+    /* background-image: url(/public/plain.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 60px);
+  }

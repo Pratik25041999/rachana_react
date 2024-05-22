@@ -1,0 +1,26 @@
+.planImage{
+    height: 268px;
+    width: 368px;
+}
+.planImage:hover{
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    -moz-filter: brightness(60%);
+    -o-filter: brightness(60%);
+    -ms-filter: brightness(60%);
+    /* -webkit-transition: all 0.50s; */
+    /* transition: all 0.50s; */
+}
+.imageRow{
+    padding-left: 40px;
+    padding-right: 40px;
+
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+.MainColumnForLocation{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}

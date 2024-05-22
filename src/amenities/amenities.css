@@ -1,0 +1,54 @@
+.MainColumnForAmenities{
+    display: flex;
+    flex-direction: column;
+    background-color: #830c29;
+    /* background-image: url(/public/plain.png); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: calc(100vh - 60px); */
+}
+.planImageAm{
+    height: 400px;
+}
+.rowForList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.columnfortext{
+    display: block;
+}
+.rowforAm{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.newColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.WhiteTextAM{
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family:  "Lora", serif;
+    color: white;
+  }
+  .column3{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+flex-wrap: wrap;
+  }

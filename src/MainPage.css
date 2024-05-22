@@ -1,0 +1,19 @@
+.testOne{
+    background: red;
+display: flex;
+}
+.mainImage{
+height: 200px;
+width: 200px;
+}
+.headingText{
+    color:beige;
+    font-size: 40;
+    font-family: "Playfair Display", serif;
+}
+.textField{}
+/* @media (max-width: 420px) {
+.testOne{
+    flex-direction: column;
+}
+} */
