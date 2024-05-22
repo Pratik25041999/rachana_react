@@ -5,7 +5,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import BasicExample from "./test";
 import ContactUsModal from "./test/ContactUsModal";
 import Navbar from "./NavBar";
-import { useState, useEffect, useRef, forwardRef } from "react";
+import { useState, useRef } from "react";
 import MainPage from "./MainPage";
 import OverView from "./overview/OverView";
 import ContactUs from "./contactUs/ContactUs";
@@ -15,48 +15,85 @@ import Amenities from "./amenities/amenities";
 // import MainPage from "./MainPage";
 
 function App() {
-  const [contactModalShow, setCOntactModalShow] = useState(false);
-  const overviewRef = useRef(null);
-  const OverViewComp = forwardRef(OverView);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setCOntactModalShow(true);
-  //   }, 5000);
-  // }, []);
+	const [contactModalShow, setCOntactModalShow] = useState(false);
+	const homeRef = useRef(null);
+	const overviewRef = useRef(null);
+	const amenitiesRef = useRef(null);
+	const SiteLocationRef = useRef(null);
+	const PlansRef = useRef(null);
+	const ContactUsRef = useRef(null);
 
-  const showView = (index) => {
-    console.log(index);
-    if (index === 1) {
-      console.log("Scroll");
-      console.log(overviewRef.current);
-      overviewRef.current?.scrollIntoView({ behaviour: "smooth" });
-      // OverViewComp.current?.scrollIntoView();
-    }
-  };
+	// useEffect(() => {
+	//   setTimeout(() => {
+	//     setCOntactModalShow(true);
+	//   }, 5000);
+	// }, []);
 
-  const onHide = () => setCOntactModalShow(false);
-  return (
-    <div className="App">
-      <Navbar showView={showView} />
-      <div className="mainColum">
-        <div style={{ height: "69px" }}></div>
-        <div className="container_home">
-          <div>
-            <img className="LandingImage" src="main_pic.jpeg" />
-          </div>
-        </div>
-        {/* <MainPage /> */}
-        <OverView divFoc={overviewRef} />
-        {/* <div ref={overviewRef}></div> */}
-        <Amenities />
-        <OverViewComp />
-        <Plans />
-        <SiteLocation />
-        <ContactUs />
-        <ContactUsModal show={contactModalShow} onHide={onHide} />
-      </div>
-    </div>
-  );
+	const scrollToView = (elementPosition) => {
+		const headerOffset = 69;
+		const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+		window.scrollTo({
+			top: offsetPosition,
+			behavior: "smooth",
+		});
+	};
+
+	const showView = (view) => {
+		let elementPosition = 0;
+		switch (view) {
+			case "HOME": {
+				elementPosition = homeRef.current?.getBoundingClientRect().top;
+				break;
+			}
+			case "OVERVIEW": {
+				elementPosition = overviewRef.current?.getBoundingClientRect().top;
+				break;
+			}
+			case "AMENITIES": {
+				elementPosition = amenitiesRef.current?.getBoundingClientRect().top;
+				break;
+			}
+			case "PLANS": {
+				elementPosition = PlansRef.current?.getBoundingClientRect().top;
+				break;
+			}
+			case "LOCATION": {
+				elementPosition = SiteLocationRef.current?.getBoundingClientRect().top;
+				break;
+			}
+			case "CONTACT US": {
+				elementPosition = ContactUsRef.current?.getBoundingClientRect().top;
+				break;
+			}
+
+			default:
+				return;
+		}
+
+		scrollToView(elementPosition);
+	};
+
+	const onHide = () => setCOntactModalShow(false);
+	return (
+		<div className="App">
+			<Navbar showView={showView} />
+			<div className="mainColum">
+				<div style={{ height: "69px" }}></div>
+				<div className="container_home">
+					<div>
+						<img className="LandingImage" src="main_pic.jpeg" alt="mainImg" />
+					</div>
+				</div>
+				{/* <MainPage /> */}
+				<OverView divFoc={overviewRef} />
+				<Amenities scrollRef={amenitiesRef} />
+				<Plans scrollRef={PlansRef} />
+				<SiteLocation scrollRef={SiteLocationRef} />
+				<ContactUs scrollRef={ContactUsRef} />
+				<ContactUsModal show={contactModalShow} onHide={onHide} />
+			</div>
+		</div>
+	);
 }
 
 export default App;

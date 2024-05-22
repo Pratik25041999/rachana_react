@@ -1,43 +1,42 @@
-.MainColumnForLocation{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    background-color: #830c29;
-    /* background-image: url(/public/plain.png); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: calc(100vh - 60px);
+.MainColumnForLocation {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	background-color: #830c29;
+	/* background-image: url(/public/plain.png); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc(100vh - 60px);
 }
-.column2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.column2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.rowforlocation{
-        padding-left: 50px;
-        padding-right: 50px;
-        width: 100vw;
-          display: flex;
-          justify-content: center;
-          /* align-items: center; */
+.rowforlocation {
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
 
-            font-size: 14px;
+	font-size: 14px;
 }
-.imageMap{
-    border: 1px solid #cc9540;
-    width: 370px;
-    padding:3px;
+.imageMap {
+	border: 1px solid #cc9540;
+	width: 370px;
+	padding: 3px;
 }
-.containerForIcons{
-    height: 140px;
-    width: 140px;
-    border-radius: 10px;
-    /* justify-content: center; */
-    align-content: center;
-    background-color: #ffffff;
+.containerForIcons {
+	height: 140px;
+	width: 140px;
+	border-radius: 10px;
+	/* justify-content: center; */
+	align-content: center;
+	background-color: #ffffff;
 }
 .email-icon2 {
-height: 30px;
-    color: #830c29;
-  }
+	height: 30px;
+	color: #830c29;
+}

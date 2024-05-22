@@ -1,76 +1,70 @@
-.MainColumnForOverView{
-  display: flex;
-  flex-direction: column;
-  /* justify-content: space-between; */
-  background-color: #830c29;
-  /* background-image: url(/public/plain.png); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: calc(100vh - 60px);
+.MainColumnForOverView {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: space-between; */
+	background-color: #830c29;
+	/* background-image: url(/public/plain.png); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc(100vh - 60px);
 }
-.line_dd{
-  padding: 0px;
-  margin-top: 8px;
-  height: 1px;
-  width: 100vw;
-  background-image: linear-gradient(to right, #cc9540, #f0cf67);
+.line_dd {
+	padding: 0px;
+	margin-top: 8px;
+	height: 1px;
+	width: 100vw;
+	background-image: linear-gradient(to right, #cc9540, #f0cf67);
 }
-.borderSideGolden{
-  height: 1px;
-  width: 50px;
-  background-image: linear-gradient(to right, #cc9540, #f0cf67);
-
+.borderSideGolden {
+	height: 1px;
+	width: 50px;
+	background-image: linear-gradient(to right, #cc9540, #f0cf67);
 }
-.rowTitle{
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-
+.rowTitle {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
-.imageOverView{
-    border: 1px solid #cc9540;
-    width: 600px;
-    padding:3px;
+.imageOverView {
+	border: 1px solid #cc9540;
+	width: 600px;
+	padding: 3px;
 }
-.OverColumn{
-    display: flex;
-    flex-direction: column;
+.OverColumn {
+	display: flex;
+	flex-direction: column;
+}
+.WhiteText {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: white;
+}
+.golden-text {
+	font-size: 26px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: #f0cf67;
+	background-color: #e9cc6c;
+	/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+	-webkit-background-clip: text; /* For Safari */
+	background-clip: text;
+	color: transparent;
+}
 
+.OverViewPage {
+	padding-left: 50px;
+	padding-right: 50px;
 
+	display: flex;
+	justify-content: space-between;
+	/* align-items: center; */
 
-  }
-  .WhiteText{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-family:  "Lora", serif;
-    color: white;
-  }
-    .golden-text {
-        font-size: 26px;
-        font-weight: 400;
-        letter-spacing: 2px;
-        font-family:  "Lora", serif;
-        color:#f0cf67;
-        background-color:#e9cc6c;
-        /* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
-        -webkit-background-clip: text; /* For Safari */
-        background-clip: text;
-        color: transparent;
-      }
-
-.OverViewPage{
-  padding-left: 50px;
-  padding-right: 50px;
-  width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-
-      font-size: 14px;
-
-  }
+	font-size: 14px;
+}
