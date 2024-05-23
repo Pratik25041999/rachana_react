@@ -42,7 +42,7 @@
  border: 1px solid #ccc;
  border-radius: 0px;
  font-size: 18px;
- background-color: #FFFDD0;
+ background-color: #ffffff;
 
 }
 .Textfield:focus{
@@ -93,9 +93,16 @@
     text-align: center;
   }
   .MainImpColumn{
-    background-color: #830c29;
+    background-image: radial-gradient(#8e0631,#600223);
+    /* background-image: radial-gradient(#600223, #780127); */
     /* background-image: url(/public/plain.png); */
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 60px);
+  }
+  .ContactUsDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }

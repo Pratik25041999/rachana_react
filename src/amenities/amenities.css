@@ -1,14 +1,25 @@
 .MainColumnForAmenities{
     display: flex;
     flex-direction: column;
-    background-color: #830c29;
+    /* background-image: radial-gradient(#8e0631,#600223) */
+    background-image: radial-gradient(#8e0631,#600223);
+
     /* background-image: url(/public/plain.png); */
     background-repeat: no-repeat;
     background-size: cover;
     /* height: calc(100vh - 60px); */
 }
+.containerForIcons2 {
+    padding-top: 40px;
+	height: 140px;
+	width: 140px;
+	border-radius: 10px;
+	/* justify-content: center; */
+	/* align-content: center; */
+	background-color:#ffffff
+}
 .planImageAm{
-    height: 400px;
+    height: 336px;
 }
 .rowForList{
     display: flex;

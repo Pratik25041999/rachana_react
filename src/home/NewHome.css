@@ -1,0 +1,33 @@
+.MainColumnForHome{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-image: radial-gradient(#8e0631,#600223);
+	/* background-image: url(/public/plain.png); */
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: calc(100vh - 60px);
+
+}
+.HomeRow{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding-left: 40px;
+padding-right: 120px;
+}
+.imageOverViewHome{
+    border: 1px solid #cc9540;
+	width: 600px;
+	padding: 3px;
+}
+.mainpage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image:url(/public/circular.png);
+    background-repeat: no-repeat;
+	background-size: cover;
+    opacity: 0.2; */
+}
