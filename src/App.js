@@ -1,23 +1,24 @@
-import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import BasicExample from "./test";
 import ContactUsModal from "./test/ContactUsModal";
 import Navbar from "./NavBar";
-import { useState, useRef } from "react";
-import MainPage from "./MainPage";
+import { useState, useRef,useEffect } from "react";
 import OverView from "./overview/OverView";
 import ContactUs from "./contactUs/ContactUs";
 import Plans from "./plans/plans";
 import SiteLocation from "./location/location";
 import Amenities from "./amenities/amenities";
 import NewHome from "./home/NewHome";
+import DisplayModal from "./DisplayModal/DisplayModal"
+import ImageCarousel from "./image_slider/image_slider_custom";
 
 // import MainPage from "./MainPage";
 
 function App() {
-  const [contactModalShow, setCOntactModalShow] = useState(false);
+  const [contactModalShow, setContactModalShow] = useState(false);
+  const [displayModalShow, setDisplayModalShow] = useState(false);
+  const [startIndex, setStartIndex] = useState(0)
   const homeRef = useRef(null);
   const overviewRef = useRef(null);
   const amenitiesRef = useRef(null);
@@ -27,7 +28,7 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => {
-      setCOntactModalShow(true);
+      setContactModalShow(true);
     }, 5000);
   }, []);
 
@@ -75,21 +76,31 @@ function App() {
     scrollToView(elementPosition);
   };
 
-  const onHide = () => setCOntactModalShow(false);
+  const onHide = () => setContactModalShow(false);
+  const hideDisplayModal= () => setDisplayModalShow(false)
+  const selectImage = (index) => {
+    setStartIndex(index)
+    setDisplayModalShow(true)
+  }
   return (
     <div className="App">
       <Navbar showView={showView} />
       <div className="mainColum">
         <div style={{ height: "69px" }}></div>
-
         {/* <MainPage /> */}
         <NewHome scrollRef={homeRef} />
+        <button className="vertical-button">
+      Click Me
+    </button>
+  
         <OverView divFoc={overviewRef} />
         <Amenities scrollRef={amenitiesRef} />
-        <Plans scrollRef={PlansRef} />
+        <Plans scrollRef={PlansRef} showImage={selectImage} />
         <SiteLocation scrollRef={SiteLocationRef} />
         <ContactUs scrollRef={ContactUsRef} />
+    
         <ContactUsModal show={contactModalShow} onHide={onHide} />
+        <DisplayModal show={displayModalShow} onHide={hideDisplayModal} startIndex={startIndex} />
       </div>
     </div>
   );

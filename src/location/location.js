@@ -84,7 +84,7 @@ function SiteLocation({ scrollRef }) {
                   fontWeight: "600",
                 }}
               >
-                URAN RAILWAY STATION
+                KHANDESHWAR RAILWAY STATION
               </div>
             </div>
           </div>

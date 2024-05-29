@@ -1,12 +1,34 @@
 import React from "react";
 import "./plans.css";
+import ImageCarousel from "../image_slider/image_slider_custom";
 
-function Plans({ scrollRef }) {
+import { useState} from "react";
+
+
+
+function Plans({ scrollRef , showImage }) {
+  const [isCarouselOpen, setIsCarouselOpen] = useState(false);
+
+const openCarousel = () => {
+  setIsCarouselOpen(true);
+};
+
+const closeCarousel = () => {
+  setIsCarouselOpen(false);
+};
   return (
     <div className="MainColumnForLocation" ref={scrollRef}>
       <div>
         <div style={{ height: "40px" }}></div>
         <div className="rowTitle">
+      {isCarouselOpen && <ImageCarousel onClose={closeCarousel} />}
+      <style>{`
+        .open-carousel-button {
+          padding: 10px 20px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      `}</style>
           <div className="borderSideGolden"></div>
           <div
             className="golden-text"
@@ -46,11 +68,16 @@ function Plans({ scrollRef }) {
           className="planImage"
           src="./drone_view_compressed.jpeg"
           alt="droneView"
+          onClick={openCarousel}
+          />
+        <div style={{ width: "40px" }}></div>
+        <img className="planImage" src="./1bhk.jpg" alt="1bhk" 
+          onClick={openCarousel}
+          />
+        <div style={{ width: "40px" }}></div>
+        <img className="planImage" src="./2bhk.jpg" alt="2bhk" 
+          onClick={openCarousel}
         />
-        <div style={{ width: "40px" }}></div>
-        <img className="planImage" src="./1bhk.jpg" alt="1bhk" />
-        <div style={{ width: "40px" }}></div>
-        <img className="planImage" src="./2bhk.jpg" alt="2bhk" />
       </div>
       <div style={{ height: "40px" }}></div>
     </div>

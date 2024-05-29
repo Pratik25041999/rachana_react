@@ -2,8 +2,6 @@ import React from "react";
 import "./amenities.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faPlaneDeparture,
-  faTrainSubway,
   faPersonSwimming,
   faTableTennisPaddleBall,
   faDumbbell,
@@ -186,7 +184,7 @@ function Amenities({ scrollRef }) {
                       fontWeight: "600",
                     }}
                   >
-                    MEDITATION
+                    YOGA
                     <br />
                     ROOM
                   </div>
