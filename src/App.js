@@ -12,6 +12,7 @@ import Amenities from "./amenities/amenities";
 import NewHome from "./home/NewHome";
 import DisplayModal from "./DisplayModal/DisplayModal"
 import ImageCarousel from "./image_slider/image_slider_custom";
+import ContactForm from "./contactussss";
 
 // import MainPage from "./MainPage";
 
@@ -98,7 +99,7 @@ function App() {
         <Plans scrollRef={PlansRef} showImage={selectImage} />
         <SiteLocation scrollRef={SiteLocationRef} />
         <ContactUs scrollRef={ContactUsRef} />
-    
+    {/* <ContactForm/> */}
         <ContactUsModal show={contactModalShow} onHide={onHide} />
         <DisplayModal show={displayModalShow} onHide={hideDisplayModal} startIndex={startIndex} />
       </div>
