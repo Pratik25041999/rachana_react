@@ -1,77 +1,110 @@
-import React, { useState, useEffect } from 'react';
-import AwesomeSlider from 'react-awesome-slider';
-import 'react-awesome-slider/dist/styles.css';
-import { FaSearchPlus, FaSearchMinus, FaPlay, FaPause ,FaTimes,FaChevronLeft,FaChevronRight} from 'react-icons/fa';
+import React, { useState, useEffect } from "react";
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/styles.css";
+import {
+	FaSearchPlus,
+	FaSearchMinus,
+	FaPlay,
+	FaPause,
+	FaTimes,
+	FaChevronLeft,
+	FaChevronRight,
+} from "react-icons/fa";
+import { BiReset } from "react-icons/bi";
 import "./image_slider_custom.css";
+import Draggable from "react-draggable";
+
 const images = [
-  { src: './drone_view_compressed.jpeg', alt: 'Image 1', },
-  { src: '/1bhk.jpg', alt: 'Image 2' },
-  { src: './2bhk.jpg', alt: 'Image 3' },
+	{ src: "./drone_view_compressed.jpeg", alt: "Image 1" },
+	{ src: "/1bhk.jpg", alt: "Image 2" },
+	{ src: "./2bhk.jpg", alt: "Image 3" },
 ];
 const ImageCarousel = ({ onClose }) => {
-  const [zoom, setZoom] = useState(1);
-  const [isSlideshowActive, setIsSlideshowActive] = useState(false);
-  const [currentIndex, setCurrentIndex] = useState(0);
+	const [zoom, setZoom] = useState(1);
+	const [isSlideshowActive, setIsSlideshowActive] = useState(false);
+	const [currentIndex, setCurrentIndex] = useState(0);
+	const [reset, setReset] = useState(false);
 
-  const handleZoomIn = () => {
-    setZoom(zoom + 0.1);
-  };
+	const handleZoomReset = () => {
+		setReset(true);
+		setZoom(1)
+		setTimeout(() => {
+			setReset(false);
+		}, 10);
+	};
+	const handleZoomIn = () => setZoom(zoom + 0.1);
 
-  const handleZoomOut = () => {
-    setZoom(zoom - 0.1);
-  };
+	const handleZoomOut = () => zoom > 1 && setZoom(zoom - 0.1);
 
-  const toggleSlideshow = () => {
-    setIsSlideshowActive(!isSlideshowActive);
-  };
+	const toggleSlideshow = () => {
+		setIsSlideshowActive(!isSlideshowActive);
+	};
 
-  useEffect(() => {
-    let interval;
-    if (isSlideshowActive) {
-      interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 2000);
-    }
-    return () => clearInterval(interval);
-  }, [isSlideshowActive]);
+	useEffect(() => {
+		let interval;
+		if (isSlideshowActive) {
+			interval = setInterval(() => {
+				setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+			}, 2000);
+		}
+		return () => clearInterval(interval);
+	}, [isSlideshowActive]);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+	const nextSlide = () => {
+		setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+	};
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
-  };
+	const prevSlide = () => {
+		setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+	};
 
-  return (
-    <div className="carousel-container">
-      <div className="app-bar">
-        <button onClick={handleZoomIn}><FaSearchPlus /></button>
-        <button onClick={handleZoomOut}><FaSearchMinus /></button>
-        <button onClick={toggleSlideshow}>
-          {isSlideshowActive ? <FaPause /> : <FaPlay />}
-        </button>
-        <button onClick={onClose}><FaTimes /></button>
-      </div>
-      <div className="slider-wrapper">
-        <AwesomeSlider
-          selected={currentIndex}
-          className="aws-btn"
-          style={{ transform: `scale(${zoom})` }}
-        >
-          {images.map((image, index) => (
-            <div key={index} data-src={image.src} />
-          ))}
-        </AwesomeSlider>
-        <div className="arrows">
-          <button onClick={prevSlide}><FaChevronLeft /></button>
-          <button onClick={nextSlide}><FaChevronRight /></button>
-        </div>
-      </div>
-      <div className="footer">
-        {currentIndex + 1} / {images.length}
-      </div>
-      <style>{`
+	return (
+		<div className="carousel-container">
+			<div className="app-bar">
+				<button onClick={handleZoomIn}>
+					<FaSearchPlus />
+				</button>
+				<button onClick={handleZoomOut}>
+					<FaSearchMinus />
+				</button>
+				<button onClick={handleZoomReset}>
+					<BiReset />
+				</button>
+				<button onClick={toggleSlideshow}>{isSlideshowActive ? <FaPause /> : <FaPlay />}</button>
+				<button onClick={onClose}>
+					<FaTimes />
+				</button>
+			</div>
+			<div className="slider-wrapper">
+				<AwesomeSlider
+					selected={currentIndex}
+					className="aws-btn"
+					organicArrows={false}
+					style={{ transform: `scale(${zoom})` }}
+				>
+					{images.map((image, index) => (
+						<div key={index}>
+							{!reset && (
+								<Draggable>
+									<img id="checkThis" src={image.src} alt={`img_${index}`} />
+								</Draggable>
+							)}
+						</div>
+					))}
+				</AwesomeSlider>
+				<div className="arrows">
+					<button onClick={prevSlide}>
+						<FaChevronLeft />
+					</button>
+					<button onClick={nextSlide}>
+						<FaChevronRight />
+					</button>
+				</div>
+			</div>
+			<div className="footer">
+				{currentIndex + 1} / {images.length}
+			</div>
+			<style>{`
         .carousel-container {
           position: fixed;
           top: 0;
@@ -109,8 +142,10 @@ const ImageCarousel = ({ onClose }) => {
           align-items: center;
           justify-content: center;
           position: relative;
-          margin-top: 60px; /* to ensure it doesn't overlap with app bar */
-          margin-bottom: 40px; /* to ensure it doesn't overlap with footer */
+          margin: 60px auto 40px; /* to ensure it doesn't overlap with app bar */
+					width: 840px;
+					overflow: hidden;
+
         }
         .aws-btn {
           width: 80%;
@@ -150,10 +185,8 @@ const ImageCarousel = ({ onClose }) => {
           z-index: 1001;
         }
       `}</style>
-    </div>
-  );
+		</div>
+	);
 };
 
 export default ImageCarousel;
-
-  
