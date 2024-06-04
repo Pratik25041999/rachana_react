@@ -13,6 +13,7 @@ import NewHome from "./home/NewHome";
 import DisplayModal from "./DisplayModal/DisplayModal"
 import ImageCarousel from "./image_slider/image_slider_custom";
 import ContactForm from "./contactussss";
+import ImageLightboxComponent from "./image_slider/new_image_lightbox";
 
 // import MainPage from "./MainPage";
 
@@ -100,6 +101,7 @@ function App() {
         <SiteLocation scrollRef={SiteLocationRef} />
         <ContactUs scrollRef={ContactUsRef} />
     {/* <ContactForm/> */}
+    <ImageLightboxComponent/>
         <ContactUsModal show={contactModalShow} onHide={onHide} />
         <DisplayModal show={displayModalShow} onHide={hideDisplayModal} startIndex={startIndex} />
       </div>
