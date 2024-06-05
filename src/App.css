@@ -92,14 +92,14 @@
 .vertical-button {
 	position: fixed;
 	right: 0%; /* Position it on the right */
-	top: 50%; /* Center it vertically */
-	/* transform:rotate(270deg) translate(50%); Adjust for exact centering */
-	transform-origin: 40%;
-	padding: 10px 20px;
+	top: 45%; /* Center it vertically */
+	transform:rotate(270deg);
+	transform-origin: 85%;
+	padding: 8px 20px;
 	background-color: #f59c03;
 	color: white; /* Button text color */
 	border: none; /* Remove border */
-	border-radius: 5px 5px 5px 5px; /* Rounded corners on left side */
+	border-radius: 5px 5px 0px 0px; /* Rounded corners on left side */
 	cursor: pointer; /* Pointer cursor on hover */
 	z-index: 1000; /* Ensure it stays on top */
   }

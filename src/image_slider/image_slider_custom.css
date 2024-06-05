@@ -32,4 +32,12 @@
     max-height: 100%;
     transition: transform 0.2s ease;
   }
-  
+  .NewImagesCollections:hover{
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    -moz-filter: brightness(60%);
+    -o-filter: brightness(60%);
+    -ms-filter: brightness(60%);
+    /* -webkit-transition: all 0.50s; */
+    /* transition: all 0.50s; */
+}

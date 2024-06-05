@@ -3,6 +3,7 @@ import "./plans.css";
 import ImageCarousel from "../image_slider/image_slider_custom";
 
 import { useState} from "react";
+import ImageLightboxComponent from "../image_slider/new_image_lightbox";
 
 
 
@@ -60,10 +61,10 @@ const closeCarousel = () => {
             style={{ width: "490px", height: "0.8px" }}
           ></div>
         </div>
-        {/* <div style={{ height: "40px" }}></div> */}
+        <div style={{ height: "40px" }}></div>
       </div>
 
-      <div className="imageRow">
+      {/* <div className="imageRow">
         <img
           className="planImage"
           src="./drone_view_compressed.jpeg"
@@ -78,7 +79,9 @@ const closeCarousel = () => {
         <img className="planImage" src="./2bhk.jpg" alt="2bhk" 
           onClick={openCarousel}
         />
-      </div>
+      </div> */}
+    <ImageLightboxComponent/>
+
       <div style={{ height: "40px" }}></div>
     </div>
   );

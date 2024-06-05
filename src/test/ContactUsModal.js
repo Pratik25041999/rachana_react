@@ -28,7 +28,10 @@ const ContactUsModal = ({ show, onHide }) => {
       formData,
       'VGt6KdyI142W7Dy_O'         // Replace with your EmailJS user ID
     ).then((result) => {
-      console.log('Email successfully sent!', result.text);
+      alert("Please fill out all fields")
+      console.log('Email successfully sent!', result.status);
+      onHide();
+
     }, (error) => {
       console.log('Failed to send email.', error.text);
     });
@@ -69,8 +72,7 @@ setFormData({ name: '', email: '', number: '' });
                 type="tel"
                 className="Textfield2"
                 placeholder="Contact Number"
-          name="number" 
-
+                name="number" 
                 value={formData.number} 
                 onChange={handleChange} 
                 required

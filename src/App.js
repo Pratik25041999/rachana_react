@@ -79,6 +79,7 @@ function App() {
   };
 
   const onHide = () => setContactModalShow(false);
+  const onSHowwwww = () => setContactModalShow(true);
   const hideDisplayModal= () => setDisplayModalShow(false)
   const selectImage = (index) => {
     setStartIndex(index)
@@ -91,9 +92,13 @@ function App() {
         <div style={{ height: "69px" }}></div>
         {/* <MainPage /> */}
         <NewHome scrollRef={homeRef} />
-        <button className="vertical-button">
-      Click Me
+        <button onClick={
+      onSHowwwww
+
+        } className="vertical-button">Enquiry Now
+      
     </button>
+   
   
         <OverView divFoc={overviewRef} />
         <Amenities scrollRef={amenitiesRef} />
@@ -101,9 +106,8 @@ function App() {
         <SiteLocation scrollRef={SiteLocationRef} />
         <ContactUs scrollRef={ContactUsRef} />
     {/* <ContactForm/> */}
-    <ImageLightboxComponent/>
         <ContactUsModal show={contactModalShow} onHide={onHide} />
-        <DisplayModal show={displayModalShow} onHide={hideDisplayModal} startIndex={startIndex} />
+        {/* <DisplayModal show={displayModalShow} onHide={hideDisplayModal} startIndex={startIndex} /> */}
       </div>
     </div>
   );

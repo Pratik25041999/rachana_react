@@ -209,7 +209,7 @@ function Amenities({ scrollRef }) {
         <div className="columnfortext">
           <div className="WhiteTextAM"> 5.INDOOR GAMES</div>
           <div className="WhiteTextAM"> 6.PARTY ROOM</div>
-          <div className="WhiteTextAM"> 7.BARBEQUE ROOM</div>
+          <div className="WhiteTextAM"> 7.CLUB HOUSE</div>
           <div className="WhiteTextAM"> 8.PLANTATION WITH SIT-OUTS</div>
         </div>
         <div className="columnfortext">

@@ -6,7 +6,6 @@
 	/* background-image: url(/public/plain.png); */
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: calc(100vh - 60px);
 }
 .column2 {
 	display: flex;

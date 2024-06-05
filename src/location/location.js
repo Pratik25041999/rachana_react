@@ -45,7 +45,7 @@ function SiteLocation({ scrollRef }) {
           style={{ width: "1100px", height: "0.8px" }}
         ></div>
       </div>
-      <div style={{ height: "60px" }}></div>
+      <div style={{ height: "40px" }}></div>
 
       <div className="rowforlocation">
         <div className="column2">
@@ -134,7 +134,28 @@ function SiteLocation({ scrollRef }) {
 
         <img className="imageMap" src="maps.png" alt="maps2" />
       </div>
-      <div style={{ height: "100px" }}></div>
+      <div style={{ height: "50px" }}></div>
+
+      <div className="rowForList">
+        <div className="columnfortext">
+          <div className="WhiteTextAM">1.Navi Mumbai International Airport - 10 minutes</div>
+          <div className="WhiteTextAM"> 2.Mumbai-Pune ExpressWay - 10 minutes</div>
+          <div className="WhiteTextAM"> 3.Panvel Railway Station - 10 minutes</div>
+          <div className="WhiteTextAM"> 4.Panvel ST Bus Depot - 15 minutes</div>
+        </div>
+
+        <div className="columnfortext">
+          <div className="WhiteTextAM"> 5.Cidco Bus Stop - 10 minutes</div>
+          <div className="WhiteTextAM"> 6.International Sports Complex - 10 minutes</div>
+          <div className="WhiteTextAM"> 7.Upcoming Navi Mumbai SEZ - 10 minutes</div>
+          <div className="WhiteTextAM"> 8.JNPT (Jawaharlal Nehru Port Trust) - 25 minutes</div>
+        </div>
+        <div className="columnfortext">
+          <div className="WhiteTextAM"> 9.Major Schools,Colleges,Markets,Banks with 3kms Radius</div>
+        </div>
+    
+      </div>
+      {/* <div style={{ height: "20px" }}></div> */}
     </div>
   );
 }

@@ -1,10 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ContactUs.css";
 import SubmitButton from "./submit";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import emailjs from 'emailjs-com';
+
 
 function ContactUs({ scrollRef }) {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    number: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs.send(
+      'service_3p124nr',     // Replace with your EmailJS service ID
+      'template_sbzpoda',    // Replace with your EmailJS template ID
+      formData,
+      'VGt6KdyI142W7Dy_O'         // Replace with your EmailJS user ID
+    ).then((result) => {
+      console.log('Email successfully sent!', result.status);
+
+    }, (error) => {
+      console.log('Failed to send email.', error.text);
+    });
+setFormData({ name: '', email: '', number: '' });
+  };
   return (
     <div
       className="MainImpColumn"
@@ -15,6 +47,7 @@ function ContactUs({ scrollRef }) {
       }}
       ref={scrollRef}
     >
+      
       <div className="MainColumnForOverView">
         <div style={{ height: "40px" }}></div>
         <div className="rowTitle">
@@ -29,6 +62,7 @@ function ContactUs({ scrollRef }) {
           <div className="borderSideGolden"></div>
         </div>
         <div style={{ height: "30px" }}></div>
+        
         <div className="ContactUsRow">
           <div className="FormForContactUS">
             <div className="ColumnContactUs">
@@ -43,26 +77,44 @@ function ContactUs({ scrollRef }) {
 
                 <div className="borderSideGolden"></div>
               </div>
+    <form onSubmit={handleSubmit}>
+
               <div style={{ height: "32px" }}></div>
               <input
                 type="text"
                 className="Textfield"
                 placeholder="Name"
+                name="name" 
+                value={formData.name} 
+                onChange={handleChange} 
+                required 
               ></input>
               <div style={{ height: "32px" }}></div>
               <input
-                type="text"
+                type="email"
                 className="Textfield"
                 placeholder="Email"
+                name="email" 
+                value={formData.email} 
+                onChange={handleChange} 
+                required
               ></input>
               <div style={{ height: "32px" }}></div>
               <input
-                type="text"
+                type="tel"
                 className="Textfield"
                 placeholder="Contact Number"
+                name="number" 
+                value={formData.number} 
+                onChange={handleChange} 
+                required
               ></input>
               <div style={{ height: "32px" }}></div>
-              <SubmitButton />
+             <div style={{display:"flex", justifycontent: "center"}}>
+             <SubmitButton />
+             </div>
+    </form>
+
             </div>
           </div>
 
