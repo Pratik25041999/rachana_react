@@ -1,7 +1,6 @@
 import React from "react";
 import "./plans.css";
 import ImageCarousel from "../image_slider/image_slider_custom";
-
 import { useState} from "react";
 import ImageLightboxComponent from "../image_slider/new_image_lightbox";
 

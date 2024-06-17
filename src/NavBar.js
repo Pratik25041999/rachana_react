@@ -11,6 +11,7 @@ const Navbar = ({ showView }) => {
 	};
 
 	return (
+		
 		<div className="ColumnView" style={{ position: "fixed" }}>
 			<div className="navbar">
 				<div className="logo">
@@ -54,7 +55,7 @@ const Navbar = ({ showView }) => {
 						CONTACT US
 					</div>
 				</div>
-				<img src="company_logo.png" style={{ height: "40px" }} alt="tailLogo" />
+				<img className="compay_logo" src="company_logo.png" style={{ height: "40px" }} alt="tailLogo" />
 			</div>
 			<div className="line_d"></div>
 		</div>

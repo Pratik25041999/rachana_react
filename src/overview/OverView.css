@@ -49,6 +49,7 @@
 .golden-text {
 	font-size: 26px;
 	font-weight: 400;
+	text-align: center;
 	letter-spacing: 2px;
 	font-family: "Lora", serif;
 	color: #f0cf67;

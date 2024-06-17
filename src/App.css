@@ -107,3 +107,16 @@
   .vertical-button:hover {
 	background-color:#fcb339 
   }
+  @media (max-width: 1024px) {
+/* .desktop-view{
+  display: none;
+} */
+/* .compay_logo{
+	display: none;
+}
+.menu {
+	display: block;
+	gap: 25px;
+
+} */
+}
