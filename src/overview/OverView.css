@@ -6,13 +6,13 @@
 	/* background-image: url(/public/plain.png); */
 	background-repeat: no-repeat;
 	background-size: cover;
-	/* height: calc(100vh - 60px); */
+	height: calc(100vh - 60px);
 }
 .line_dd_overView {
 	padding: 0px;
 	margin-top: 8px;
 	height: 1px;
-	width: 90%;
+	width: 80%;
 	background-image: linear-gradient(to right, #cc9540, #f0cf67);
 }
 .borderSideGolden {
@@ -71,8 +71,8 @@
 
 @media (max-width: 1024px) {
 	.OverViewPage {
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: 16px;
+		padding-right: 16px;
 		display: block;
 		/* justify-content: space-between; */
 		align-items: center;
@@ -85,6 +85,9 @@
 	}
 	.overViewSpace{
 		height: 24px;
+	}
+	.MainColumnForOverView{
+		height: fit-content;
 	}
 	
 	}

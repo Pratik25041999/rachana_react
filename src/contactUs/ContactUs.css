@@ -99,10 +99,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: calc(100vh - 60px);
+    
   }
   .ContactUsDetails{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  @media (max-width: 1024px) {
+.ContactUsRow{
+  display: block;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.MainImpColumn{
+  height:fit-content;
+}
   }

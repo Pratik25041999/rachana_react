@@ -1,27 +1,30 @@
-.MainColumnForAmenities{
+.MainColumnForAmenities {
     display: flex;
     flex-direction: column;
     /* background-image: radial-gradient(#8e0631,#600223) */
-    background-image: radial-gradient(#8e0631,#600223);
+    background-image: radial-gradient(#8e0631, #600223);
 
     /* background-image: url(/public/plain.png); */
     background-repeat: no-repeat;
     background-size: cover;
     /* height: calc(100vh - 60px); */
 }
+
 .containerForIcons2 {
     padding-top: 40px;
-	height: 140px;
-	width: 140px;
-	border-radius: 10px;
-	/* justify-content: center; */
-	/* align-content: center; */
-	background-color:#ffffff
+    height: 140px;
+    width: 140px;
+    border-radius: 10px;
+    /* justify-content: center; */
+    /* align-content: center; */
+    background-color: #ffffff
 }
-.planImageAm{
+
+.planImageAm {
     height: 336px;
 }
-.rowForList{
+
+.rowForList {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -29,22 +32,26 @@
     padding-left: 40px;
     padding-right: 40px;
 }
-.columnfortext{
+
+.columnfortext {
     display: block;
 }
-.rowforAm{
+
+.rowforAm {
     display: flex;
     flex-direction: row;
     justify-content: center;
 
 }
-.newColumn{
+
+.newColumn {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.WhiteTextAM{
+
+.WhiteTextAM {
     text-align: left;
     justify-content: center;
     display: flex;
@@ -53,13 +60,30 @@
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 2px;
-    font-family:  "Lora", serif;
+    font-family: "Lora", serif;
     color: white;
-  }
-  .column3{
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: row;
-flex-wrap: wrap;
-  }
+}
+
+.column3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+
+    .rowforAm {
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .planImageAm {
+        width: 100%;
+    }
+}

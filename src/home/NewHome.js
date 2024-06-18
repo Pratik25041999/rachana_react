@@ -26,8 +26,8 @@ function NewHome({ scrollRef }) {
             <div className="borderSideGolden" style={{ width: 100 }}></div>
           </div>
           <img
+          className="logoInNewHome"
             src="logo.png"
-            style={{ height: "120px", marginBottom: "50px", marginTop: "50px" }}
             alt="logo"
           />
           <div className="golden-text" style={{}}>
