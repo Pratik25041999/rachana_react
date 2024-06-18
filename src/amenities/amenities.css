@@ -71,12 +71,15 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+.mobileViewAmenites{
+    display: none;
+}
 
 @media (max-width: 1024px) {
 
     .rowforAm {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 16px;
+        padding-right: 16px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -85,5 +88,11 @@
 
     .planImageAm {
         width: 100%;
+    }
+    .newColumn{
+        display: none;
+    }
+    .mobileViewAmenites{
+        display: block;
     }
 }

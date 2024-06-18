@@ -194,9 +194,153 @@ function Amenities({ scrollRef }) {
               <div style={{ width: "40px" }}></div>
             </div>
           </div>
+          {/*  */}
+          <div className="mobileViewAmenites">
+          <div style={{ height: "50px" }}></div>
+          <div className="column3">
+              <div className="containerForIcons2">
+                <div className="column2">
+                  <FontAwesomeIcon
+                    icon={faPersonSwimming}
+                    className="email-icon2"
+                  />
+                  <div style={{ height: "10px" }}></div>
+
+                  <div
+                    style={{
+                      fontSize: "14px",
+                      textAlign: "center",
+                      color: "#830c29",
+                      fontWeight: "600",
+                    }}
+                  >
+                    SWIMMING POOL
+                  </div>
+                </div>
+              </div>
+              <div style={{ width: "30px" }}></div>
+              <div className="containerForIcons2">
+                <div className="column2">
+                  <FontAwesomeIcon icon={faDumbbell} className="email-icon2" />
+                  <div style={{ height: "10px" }}></div>
+
+                  <div
+                    style={{
+                      fontSize: "14px",
+                      textAlign: "center",
+                      color: "#830c29",
+                      fontWeight: "600",
+                    }}
+                  >
+                    FITNESS CENTER
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{ height: "30px" }}></div>
+
+            <div className="column3">
+              <div className="containerForIcons2">
+                <div className="column2">
+                  <FontAwesomeIcon
+                    icon={faTableTennisPaddleBall}
+                    className="email-icon2"
+                  />
+                  <div style={{ height: "10px" }}></div>
+
+                  <div
+                    style={{
+                      fontSize: "14px",
+                      textAlign: "center",
+                      color: "#830c29",
+                      fontWeight: "600",
+                    }}
+                  >
+                    INDOOR GAMES
+                  </div>
+                </div>
+              </div>
+
+              <div style={{ width: "30px" }}></div>
+              <div className="containerForIcons2">
+                <div className="column2">
+                  <FontAwesomeIcon icon={faSpa} className="email-icon2" />
+                  <div style={{ height: "10px" }}></div>
+
+                  <div
+                    style={{
+                      fontSize: "14px",
+                      textAlign: "center",
+                      color: "#830c29",
+                      fontWeight: "600",
+                    }}
+                  >
+                    SPA ROOM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style={{ height: "30px" }}></div>
+            <div className="column3">
+              <div
+                className="containerForIcons2"
+                style={{ paddingTop: "34px" }}
+              >
+                <div className="column2">
+                  <img
+                    src="./cricket.svg"
+                    className="email-icon2"
+                    style={{ height: "40px" }}
+                  />
+
+                  <div style={{ height: "10px" }}></div>
+
+                  <div
+                    style={{
+                      fontSize: "14px",
+                      textAlign: "center",
+                      color: "#830c29",
+                      fontWeight: "600",
+                    }}
+                  >
+                    CRICKET
+                    <br /> NETBOX
+                  </div>
+                </div>
+              </div>
+              <div style={{ width: "30px" }}></div>
+              <div
+                className="containerForIcons2"
+                style={{ paddingTop: "38px" }}
+              >
+                <div className="column2">
+                  <img
+                    src="./sit.svg"
+                    className="email-icon2"
+                    style={{ height: "45px" }}
+                  />
+
+                  <div
+                    style={{
+                      fontSize: "14px",
+                      textAlign: "center",
+                      color: "#830c29",
+                      fontWeight: "600",
+                    }}
+                  >
+                    YOGA
+                    <br />
+                    ROOM
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          {/*  */}
         </div>
       </div>
-      <div style={{ height: "50px" }}></div>
+      <div style={{ height: "40px" }}></div>
 
       <div className="rowForList">
         <div className="columnfortext">
