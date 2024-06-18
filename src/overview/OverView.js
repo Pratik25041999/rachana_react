@@ -22,7 +22,12 @@ function OverView({ divFoc }) {
       <div style={{ height: "30px" }}></div>
 
       <div className="OverViewPage">
+      <div className="OverViewImage" style={{ marginTop: "30px" }}>
+          <img className="imageOverView" src="night_view.jpeg" />
+        </div>
         <div className="OverColumn">
+        <div className="overViewSpace"/>
+
           <div className="rowTitle">
             <div className="borderSideGolden"></div>
             <div
@@ -51,8 +56,8 @@ function OverView({ divFoc }) {
             A Lifestyle That Sets New Standards for Luxury
           </div>
           <div
-            className="line_dd"
-            style={{ width: "480px", marginLeft: "32px", height: "0.8px" }}
+            className="line_dd_overView"
+            style={{ marginLeft: "32px", height: "0.8px" }}
           ></div>
           <div style={{ height: "24px" }}></div>
           <div className="WhiteText">PROJECT HALLMARKS</div>
@@ -80,9 +85,7 @@ function OverView({ divFoc }) {
             Pool And Other Lifestyle Facilities
           </div>
         </div>
-        <div className="OverViewImage" style={{ marginTop: "30px" }}>
-          <img className="imageOverView" src="night_view.jpeg" />
-        </div>
+       
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
 	/* background-image: url(/public/plain.png); */
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: calc(100vh - 60px);
+	/* height: calc(100vh - 60px); */
 
 }
 .HomeRow{
@@ -31,3 +31,20 @@ padding-right: 120px;
 	background-size: cover;
     opacity: 0.2; */
 }
+
+@media (max-width: 1024px) {
+	.imageOverViewHome{
+		margin-top:16px;
+		margin-bottom: 16px;
+		border: 1px solid #cc9540;
+		width: 100%;
+		padding: 3px;
+	}
+	.HomeRow{
+		display: flex;
+		flex-direction: column;
+		/* justify-content: space-between; */
+		padding-left: 40px;
+		padding-right: 40px;
+		}
+	}

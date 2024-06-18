@@ -6,13 +6,13 @@
 	/* background-image: url(/public/plain.png); */
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: calc(100vh - 60px);
+	/* height: calc(100vh - 60px); */
 }
-.line_dd {
+.line_dd_overView {
 	padding: 0px;
 	margin-top: 8px;
 	height: 1px;
-	width: 100vw;
+	width: 90%;
 	background-image: linear-gradient(to right, #cc9540, #f0cf67);
 }
 .borderSideGolden {
@@ -68,3 +68,23 @@
 	align-items: center;
 	font-size: 14px;
 }
+
+@media (max-width: 1024px) {
+	.OverViewPage {
+		padding-left: 40px;
+		padding-right: 40px;
+		display: block;
+		/* justify-content: space-between; */
+		align-items: center;
+		font-size: 14px;
+	}
+	.imageOverView {
+		border: 1px solid #cc9540;
+		width: 100%;
+		padding: 3px;
+	}
+	.overViewSpace{
+		height: 24px;
+	}
+	
+	}

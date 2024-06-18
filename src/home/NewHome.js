@@ -4,6 +4,7 @@ import "./NewHome.css";
 function NewHome({ scrollRef }) {
   return (
     <div className="MainColumnForHome" ref={scrollRef}>
+      <div style={{ height: "48px" }}></div>
       <div className="HomeRow">
         <img className="imageOverViewHome" src="main_pic.jpeg" />
 
@@ -34,6 +35,8 @@ function NewHome({ scrollRef }) {
           </div>
         </div>
       </div>
+      <div style={{ height: "48px" }}></div>
+
     </div>
   );
 }

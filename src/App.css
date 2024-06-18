@@ -111,12 +111,12 @@
 /* .desktop-view{
   display: none;
 } */
-/* .compay_logo{
+.compay_logo{
 	display: none;
 }
 .menu {
-	display: block;
-	gap: 25px;
+	display: none;
+	/* gap: 25px; */
 
-} */
+} 
 }
