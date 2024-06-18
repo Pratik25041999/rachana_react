@@ -48,7 +48,8 @@ function SiteLocation({ scrollRef }) {
       <div style={{ height: "40px" }}></div>
 
       <div className="rowforlocation">
-        <div className="column2">
+     <div className="mobileViewFotLocations">
+         <div className="column2">
           <div className="containerForIcons">
             <div className="column2">
               <FontAwesomeIcon
@@ -130,7 +131,9 @@ function SiteLocation({ scrollRef }) {
             </div>
           </div>
         </div>
+     </div>
         <div style={{ width: "100px" }}></div>
+        <div className="mobileSpaceForLocation"></div>
 
         <img className="imageMap" src="maps.png" alt="maps2" />
       </div>

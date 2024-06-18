@@ -39,3 +39,26 @@
 	height: 30px;
 	color: #830c29;
 }
+.mobileViewFotLocations{
+	display: flex;
+	justify-content: center;
+}
+@media (max-width: 1024px) {
+
+.rowforlocation{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.imageMap {
+	border: 1px solid #cc9540;
+	width: 340px;
+	padding: 3px;
+}
+.mobileSpaceForLocation{
+	height: 30px;
+}
+}
