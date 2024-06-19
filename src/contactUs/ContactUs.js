@@ -77,7 +77,7 @@ setFormData({ name: '', email: '', number: '' });
 
                 <div className="borderSideGolden"></div>
               </div>
-    <form onSubmit={handleSubmit}>
+    <form className="ContactUsform" onSubmit={handleSubmit}>
 
               <div style={{ height: "32px" }}></div>
               <input
@@ -110,7 +110,7 @@ setFormData({ name: '', email: '', number: '' });
                 required
               ></input>
               <div style={{ height: "32px" }}></div>
-             <div style={{display:"flex", justifycontent: "center"}}>
+             <div style={{display:"flex", justifyContent:"center"}}>
              <SubmitButton />
              </div>
     </form>

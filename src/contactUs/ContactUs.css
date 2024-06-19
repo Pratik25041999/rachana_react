@@ -112,10 +112,29 @@
   display: block;
   justify-content: space-between;
   flex-direction: row;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .MainImpColumn{
   height:fit-content;
 }
+
+
+.Textfield::placeholder{
+  color: rgb(26, 24, 24);
+  font-size: 16px;
+}
+
+  }
+
+  @media (max-width: 524px) {
+    .ContactUsform{
+      width: 100%;
+    }
+    .Textfield{
+      width: 100%;
+      }
+      .Textfield:focus{
+        width: 100%;
+       }
   }

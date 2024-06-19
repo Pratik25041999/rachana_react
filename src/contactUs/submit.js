@@ -3,7 +3,7 @@ import "./ContactUs.css";
 
 const SubmitButton = ({ onClick }) => {
   return (
-    <button className="submit-button" onClick={onClick}>
+    <button className="submit-button" onClick={onClick} >
       Submit
     </button>
   );
