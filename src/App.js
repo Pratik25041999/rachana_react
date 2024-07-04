@@ -10,6 +10,7 @@ import Plans from "./plans/plans";
 import SiteLocation from "./location/location";
 import Amenities from "./amenities/amenities";
 import NewHome from "./home/NewHome";
+import Menu from "./menu";
 
 
 // import MainPage from "./MainPage";
@@ -89,6 +90,7 @@ function App() {
         <div className="mainColum">
           <div style={{ height: "69px" }}></div>
           {/* <MainPage /> */}
+          <Menu showView={showView}/>
           <NewHome scrollRef={homeRef} />
           <button onClick={
             onSHowwwww
