@@ -15,7 +15,7 @@ function SiteLocation({ scrollRef }) {
       <div className="rowTitle">
         <div className="borderSideGolden"></div>
         <div
-          className="golden-text"
+          className="golden-textMainHeading"
           style={{
             marginLeft: 15,
             marginRight: 15,
@@ -29,11 +29,10 @@ function SiteLocation({ scrollRef }) {
       <div style={{ height: "6px" }}></div>
       <div className="column2">
         <div
-          className="golden-text"
+          className="golden-textSubHeading"
           style={{
             marginLeft: 15,
             marginRight: 15,
-            fontSize: "20px",
             textAlign: "center",
           }}
         >

@@ -96,3 +96,18 @@
         display: block;
     }
 }
+
+@media (max-width: 524px) {
+    .WhiteTextAM {
+        text-align: left;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-family: "Lora", serif;
+        color: white;
+    }
+  }

@@ -171,7 +171,7 @@ setFormData({ name: '', email: '', number: '' });
             <div className="rowTitle">
               <FontAwesomeIcon icon={faPhone} className="email-icon" />
 
-              <div className="WhiteTextInfo">122345678890 / 09876544321 </div>
+              <div className="WhiteTextInfo">+91-7977202271 / 09876544321 </div>
             </div>
           </div>
         </div>
