@@ -53,7 +53,7 @@ setFormData({ name: '', email: '', number: '' });
         <div className="rowTitle">
           <div className="borderSideGolden"></div>
           <div
-            className="golden-text"
+            className="golden-textMainHeading"
             style={{ marginLeft: 15, marginRight: 15 }}
           >
             Contact Us
@@ -69,8 +69,8 @@ setFormData({ name: '', email: '', number: '' });
               <div className="rowTitle">
                 <div className="borderSideGolden"></div>
                 <div
-                  className="golden-text"
-                  style={{ marginLeft: 15, marginRight: 15, fontSize: "20px" }}
+                  className="golden-textSubHeading"
+                  style={{ marginLeft: 15, marginRight: 15 }}
                 >
                   Enquire Now
                 </div>
@@ -119,11 +119,13 @@ setFormData({ name: '', email: '', number: '' });
           </div>
 
           <div className="ContactUsDetails">
+          <div style={{ height: "32px" }}></div>
+
             <div className="rowTitle">
               <div className="borderSideGolden"></div>
               <div
-                className="golden-text"
-                style={{ marginLeft: 15, marginRight: 15, fontSize: "22px" }}
+                className="golden-textSubHeading"
+                style={{ marginLeft: 15, marginRight: 15 }}
               >
                 Site Address
               </div>
@@ -132,15 +134,15 @@ setFormData({ name: '', email: '', number: '' });
             </div>
             <div style={{ height: "12px" }}></div>
 
-            <div className="WhiteText">
+            <div className="WhiteTextInfo">
               PLOT NO 107, SECTOR 08, PUSHPAKNAGAR <br></br> NAVI MUMBAI-410 221
             </div>
             <div style={{ height: "24px" }}></div>
             <div className="rowTitle">
               <div className="borderSideGolden"></div>
               <div
-                className="golden-text"
-                style={{ marginLeft: 15, marginRight: 15, fontSize: "22px" }}
+                className="golden-textSubHeading"
+                style={{ marginLeft: 15, marginRight: 15 }}
               >
                 Corporate Office
               </div>
@@ -148,7 +150,7 @@ setFormData({ name: '', email: '', number: '' });
             </div>
             <div style={{ height: "12px" }}></div>
 
-            <div className="WhiteText">
+            <div className="WhiteTextInfo">
               OFFICE NO. 907, 9TH FLOOR,
               <br />
               THE LANDMARK CHS, PLOT NO. 26A, SECTOR. 07,
@@ -161,7 +163,7 @@ setFormData({ name: '', email: '', number: '' });
             <div className="rowTitle">
               <FontAwesomeIcon icon={faEnvelope} className="email-icon" />
 
-              <div className="WhiteText">
+              <div className="WhiteTextInfo">
                 onerachanalifestylellp2024@gmail.com
               </div>
             </div>
@@ -169,7 +171,7 @@ setFormData({ name: '', email: '', number: '' });
             <div className="rowTitle">
               <FontAwesomeIcon icon={faPhone} className="email-icon" />
 
-              <div className="WhiteText">122345678890 / 09876544321 </div>
+              <div className="WhiteTextInfo">122345678890 / 09876544321 </div>
             </div>
           </div>
         </div>

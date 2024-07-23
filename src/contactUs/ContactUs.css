@@ -1,3 +1,29 @@
+.golden-textMainHeading{
+	font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: #f0cf67;
+	background-color: #e9cc6c;
+	/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+	-webkit-background-clip: text; /* For Safari */
+	background-clip: text;
+	color: transparent;
+}
+.golden-textSubHeading{
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: #f0cf67;
+	background-color: #e9cc6c;
+	/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+	-webkit-background-clip: text; /* For Safari */
+	background-clip: text;
+	color: transparent;
+}
 .FormForContactUS{
     border: 1px solid #cc9540;
     padding-left: 26px;
@@ -15,7 +41,7 @@
     margin-right: 8px; /* Adjust the spacing between the icon and the text */
     color: #ffffff; /* Adjust the icon color as needed */
   }
-.WhiteText{
+.WhiteTextInfo{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -128,6 +154,54 @@
   }
 
   @media (max-width: 524px) {
+    .golden-textMainHeading{
+      font-size: 20px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 2px;
+      font-family: "Lora", serif;
+      color: #f0cf67;
+      background-color: #e9cc6c;
+      /* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+      -webkit-background-clip: text; /* For Safari */
+      background-clip: text;
+      color: transparent;
+    }
+    .golden-textSubHeading{
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 2px;
+      font-family: "Lora", serif;
+      color: #f0cf67;
+      background-color: #e9cc6c;
+      /* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+      -webkit-background-clip: text; /* For Safari */
+      background-clip: text;
+      color: transparent;
+    }
+    .WhiteTextInfo{
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+      font-family:  "Lora", serif;
+      color: white;
+    }
+    .footer {
+      bottom: 0;
+      left: 0;
+      right: 0;
+      /* background-color: #f1f1f1; */
+      padding: 20px;
+      color: white;
+      font-size: 12px;
+  
+      text-align: center;
+    }
     .ContactUsform{
       width: 100%;
     }
