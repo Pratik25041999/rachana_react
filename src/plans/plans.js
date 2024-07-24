@@ -3,6 +3,7 @@ import "./plans.css";
 import ImageCarousel from "../image_slider/image_slider_custom";
 import { useState} from "react";
 import ImageLightboxComponent from "../image_slider/new_image_lightbox";
+import AutoPlayy2 from "./plansImageslider";
 
 
 
@@ -79,10 +80,12 @@ const closeCarousel = () => {
           onClick={openCarousel}
         />
       </div> */}
-    <ImageLightboxComponent/>
+    {/* <ImageLightboxComponent/> */}
+      {/* <div style={{ height: "40px" }}></div> */}
+<AutoPlayy2/>
 
-      <div style={{ height: "40px" }}></div>
     </div>
+    
   );
 }
 

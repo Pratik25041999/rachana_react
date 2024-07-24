@@ -33,6 +33,7 @@ const ImageLightboxComponent = () => {
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         {images.map((image, index) => (
           <img
+          className="planImage"
             key={index}
             src={image.src}
             alt={image.alt}
@@ -44,6 +45,7 @@ const ImageLightboxComponent = () => {
           />
         ))}
       </div>
+      
 
       {isOpen && (
         <Lightbox
