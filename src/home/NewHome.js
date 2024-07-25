@@ -9,16 +9,16 @@ function NewHome({ scrollRef }) {
         <img className="imageOverViewHome" src="main_pic.jpeg" />
 
         <div className="mainpage">
-          <img
+          <img className="lotusImage"
             src="lotus_1.png"
-            style={{ height: "80px", marginBottom: "10px" }}
+            style={{marginBottom: "10px" }}
             alt="logo"
           />
           <div className="rowTitle">
             <div className="borderSideGolden" style={{ width: 100 }}></div>
             <div
-              className="golden-text"
-              style={{ marginLeft: 15, marginRight: 15, fontSize: 16 }}
+              className="golden-text-introduction"
+              style={{ marginLeft: 15, marginRight: 15}}
             >
               INTRODUCING
             </div>
@@ -30,7 +30,7 @@ function NewHome({ scrollRef }) {
             src="logo.png"
             alt="logo"
           />
-          <div className="golden-text" style={{}}>
+          <div className="golden-text-unlock">
             Unlock the Door to Your Dreams
           </div>
         </div>

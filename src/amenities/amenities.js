@@ -15,7 +15,7 @@ function Amenities({ scrollRef }) {
       <div className="rowTitle">
         <div className="borderSideGolden"></div>
         <div
-          className="golden-text"
+      className="golden-text-amenties"
           style={{
             marginLeft: 15,
             marginRight: 15,
@@ -29,12 +29,10 @@ function Amenities({ scrollRef }) {
       <div style={{ height: "6px" }}></div>
       <div className="column2">
         <div
-          className="golden-text"
+          className="golden-text-amenties-intro"
           style={{
             marginLeft: 15,
             marginRight: 15,
-            fontSize: "20px",
-            textAlign: "center",
           }}
         >
           Experience unparalleled luxury with world-class amenities tailored to

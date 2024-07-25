@@ -32,7 +32,7 @@ const closeCarousel = () => {
       `}</style>
           <div className="borderSideGolden"></div>
           <div
-            className="golden-text"
+            className="golden-text-title"
             style={{
               marginLeft: 15,
               marginRight: 15,
@@ -46,12 +46,10 @@ const closeCarousel = () => {
         <div style={{ height: "16px" }}></div>
         <div className="column2">
           <div
-            className="golden-text"
+            className="golden-text-explore"
             style={{
               marginLeft: 15,
               marginRight: 15,
-              fontSize: "20px",
-              textAlign: "center",
             }}
           >
             A Lifestyle That Sets New Standards for Luxury

@@ -9,7 +9,33 @@
     background-size: cover;
     /* height: calc(100vh - 60px); */
 }
-
+.golden-text-amenties{
+    font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: #f0cf67;
+	background-color: #e9cc6c;
+	/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+	-webkit-background-clip: text; /* For Safari */
+	background-clip: text;
+	color: transparent;
+}
+.golden-text-amenties-intro{
+    font-size: 20px;
+    text-align: center;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: #f0cf67;
+	background-color: #e9cc6c;
+	/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+	-webkit-background-clip: text; /* For Safari */
+	background-clip: text;
+	color: transparent;
+}
 .containerForIcons2 {
     padding-top: 40px;
     height: 140px;
@@ -109,5 +135,32 @@
         letter-spacing: 2px;
         font-family: "Lora", serif;
         color: white;
+    }
+    .golden-text-amenties{
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: "Lora", serif;
+        color: #f0cf67;
+        background-color: #e9cc6c;
+        /* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text;
+        color: transparent;
+    }
+    .golden-text-amenties-intro{
+        font-size: 18px;
+        text-align: center;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 2px;
+        font-family: "Lora", serif;
+        color: #f0cf67;
+        background-color: #e9cc6c;
+        /* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+        -webkit-background-clip: text; /* For Safari */
+        background-clip: text;
+        color: transparent;
     }
   }

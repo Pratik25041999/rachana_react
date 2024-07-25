@@ -8,6 +8,9 @@
 	background-size: cover;
 	height: calc(100vh - 60px);
 }
+.overview-space{
+	height: 20px;
+}
 .line_dd_overView {
 	padding: 0px;
 	margin-top: 8px;
@@ -46,8 +49,44 @@
 	font-family: "Lora", serif;
 	color: white;
 }
+.WhiteText-intro-overview {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: white;
+}
 .golden-text {
 	font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: #f0cf67;
+	background-color: #e9cc6c;
+	/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+	-webkit-background-clip: text; /* For Safari */
+	background-clip: text;
+	color: transparent;
+}
+.golden-text-title{
+	font-size: 26px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 2px;
+	font-family: "Lora", serif;
+	color: #f0cf67;
+	background-color: #e9cc6c;
+	/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+	-webkit-background-clip: text; /* For Safari */
+	background-clip: text;
+	color: transparent;
+}
+.golden-text-explore{
+	font-size: 20px;
 	font-weight: 400;
 	text-align: center;
 	letter-spacing: 2px;
@@ -67,6 +106,9 @@
 	justify-content: space-between;
 	align-items: center;
 	font-size: 14px;
+}
+.hieghtForOverView{
+	height: 30px;
 }
 
 @media (max-width: 1024px) {
@@ -93,6 +135,47 @@
 	}
 
 	@media (max-width: 524px) {
-	
-		
+		.golden-text-title{
+			font-size: 22px;
+			font-weight: 400;
+			text-align: center;
+			letter-spacing: 2px;
+			font-family: "Lora", serif;
+			color: #f0cf67;
+			background-color: #e9cc6c;
+			/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+			-webkit-background-clip: text; /* For Safari */
+			background-clip: text;
+			color: transparent;
+		}
+		.golden-text-explore{
+			font-size: 18px;
+			font-weight: 400;
+			text-align: center;
+			letter-spacing: 2px;
+			font-family: "Lora", serif;
+			color: #f0cf67;
+			background-color: #e9cc6c;
+			/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+			-webkit-background-clip: text; /* For Safari */
+			background-clip: text;
+			color: transparent;
+		}
+		.hieghtForOverView{
+			height: 0px;
+		}
+		.WhiteText-intro-overview {
+			display: flex;
+			text-align: center;
+			flex-direction: column;
+			align-items: center;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 2px;
+			font-family: "Lora", serif;
+			color: white;
+		}
+		.overview-space{
+			height: 10px;
+		}
 		}

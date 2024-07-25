@@ -8,6 +8,10 @@
 	background-size: cover;
 	height: calc(100vh - 60px);
 
+	
+}
+.lotusImage{
+	height: 80px;
 }
 .HomeRow{
 display: flex;
@@ -36,6 +40,36 @@ padding-right: 120px;
 	margin-bottom: 50px;
 	margin-top: 50px;
 }
+.golden-text-introduction{
+	
+		font-size: 16px;
+		font-weight: 400;
+		text-align: center;
+		letter-spacing: 2px;
+		font-family: "Lora", serif;
+		color: #f0cf67;
+		background-color: #e9cc6c;
+		/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+		-webkit-background-clip: text; /* For Safari */
+		background-clip: text;
+		color: transparent;
+	
+}
+.golden-text-unlock{
+	
+		font-size: 26px;
+		font-weight: 400;
+		text-align: center;
+		letter-spacing: 2px;
+		font-family: "Lora", serif;
+		color: #f0cf67;
+		background-color: #e9cc6c;
+		/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+		-webkit-background-clip: text; /* For Safari */
+		background-clip: text;
+		color: transparent;
+	
+}
 
 @media (max-width: 1024px) {
 	.imageOverViewHome{
@@ -60,4 +94,42 @@ padding-right: 120px;
 			margin-bottom: 30px;
 			margin-top: 30px;
 		}
+	}
+	@media (max-width: 524px) {
+		.lotusImage{
+			height: 70px;
+		}
+		.logoInNewHome{
+			height: 80px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+		.golden-text-introduction{
+			font-size: 14px;
+			font-weight: 400;
+			text-align: center;
+			letter-spacing: 2px;
+			font-family: "Lora", serif;
+			color: #f0cf67;
+			background-color: #e9cc6c;
+			/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+			-webkit-background-clip: text; /* For Safari */
+			background-clip: text;
+			color: transparent;
+		}
+		.golden-text-unlock{
+	
+			font-size: 24px;
+			font-weight: 400;
+			text-align: center;
+			letter-spacing: 2px;
+			font-family: "Lora", serif;
+			color: #f0cf67;
+			background-color: #e9cc6c;
+			/* background-image: linear-gradient(to left, #cc9540, #f0cf67); */
+			-webkit-background-clip: text; /* For Safari */
+			background-clip: text;
+			color: transparent;
+		
+	}
 	}
